@@ -1,13 +1,22 @@
 {
   "name": "parse-dashboard",
   "version": "1.0.0",
-  "description": "Parse dashboard PRP apps",
+  "description": "Parse dashboard",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swami701/parse-server-bundle/parse-dashboard"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "local": "nodemon -r dotenv/config app.js"
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "parse-dashboard": "^1.1.2"
+    "express": "^4.16.1",
+    "parse-dashboard": "^1.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.12.1"
   }
 }

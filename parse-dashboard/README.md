@@ -1,4 +1,4 @@
-# IMS_Parse_Dashboard
+# Parse_Dashboard
 [Parse dashboard](https://github.com/ParsePlatform/parse-dashboard)
 
 Building
