@@ -33,7 +33,7 @@ var config = {
   "users": users
 };
 
-var dashboard = new ParseDashboard(config, config.allowInsecureHTTP);
+var dashboard = new ParseDashboard(config, { allowInsecureHTTP: config.allowInsecureHTTP });
 
 var app = express();
 var mountPath = process.env.MOUNT_PATH || "";
