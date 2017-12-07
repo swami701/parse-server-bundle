@@ -1,0 +1,13 @@
+{
+  "name": "parse-dashboard",
+  "version": "1.0.0",
+  "description": "Parse dashboard PRP apps",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "parse-dashboard": "^1.1.2"
+  }
+}

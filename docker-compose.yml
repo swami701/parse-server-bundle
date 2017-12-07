@@ -1,0 +1,30 @@
+version: '2'
+services:
+  parse-server:
+    build:
+      context: ./parse-server/
+    ports:
+     - ${PS_PORT}:${PS_PORT}
+    environment:
+     - APP_ID=${APP_ID}
+     - MASTER_KEY=${MASTER_KEY}
+     - PORT=${PS_PORT}
+     - VERBOSE=${VERBOSE}
+     - DATABASE_URI=${DATABASE_URI}
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+    volumes: 
+      - ${MONGO_DB_DATA_PATH}:/data
+  dashboard:
+    build:
+      context: ./parse-dashboard/
+    ports:
+     - ${DASHBOARD_PORT}:${DASHBOARD_PORT}
+    environment:
+     - MOUNT_PATH=${DASHBOARD_MOUNT}
+    depends_on: 
+     - parse-server

@@ -1,0 +1,20 @@
+{
+  "allowInsecureHTTP": true,
+  "iconsFolder": "icons",
+  "trustProxy": 1,
+  "apps": [
+    {
+      "serverURL": "http://localhost:1337/parse",
+      "appId": "appid",
+      "masterKey": "mkey",
+      "appName": "PRP!",
+      "iconName": "kamol.png"
+    }
+  ],
+  "users": [
+    {
+      "user": "admin",
+      "pass": "password"
+    }
+  ]
+}
