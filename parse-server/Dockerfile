@@ -1,9 +1,9 @@
-FROM node:boron
+FROM node:latest
 
-RUN mkdir parse
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-ADD . /parse
-WORKDIR /parse
+COPY . /usr/src/app
 RUN npm install
 
-CMD [ "npm", "start" ]
+CMD ["npm", "start"]

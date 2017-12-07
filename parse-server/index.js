@@ -38,7 +38,7 @@ var parseConfiguration = {
   appId: process.env.APP_ID,
   masterKey: process.env.MASTER_KEY, //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:' + port + mountPath, // Don't forget to change to https if needed,
-  appName: "PRP",
+  appName: "Test",
 // liveQuery: {
 //   classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
 // }
