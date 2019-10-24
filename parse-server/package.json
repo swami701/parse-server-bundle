@@ -14,7 +14,7 @@
     "express": "^4.16.2",
     "kerberos": "^0.0.23",
     "parse": "^1.11.0",
-    "parse-server": "^2.7.1",
+    "parse-server": "^3.9.0",
     "pmx": "^1.5.5",
     "underscore": "^1.8.3",
     "v8-profiler": "^5.7.0"
